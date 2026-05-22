@@ -13,6 +13,8 @@ Komos helps operations teams automate browser based work that still lives inside
 * [Make scenario notes](integrations/make-regulated-task-queue.md)
 * [Zapier Zap notes](integrations/zapier-regulated-task-queue.md)
 * [Airtable operations queue schema](integrations/airtable-regulated-ops-queue.md)
+* [Cloudflare Worker task router](examples/cloudflare-worker-task-router/README.md)
+* [Vercel serverless task router](examples/vercel-task-router/README.md)
 
 ## Useful Komos Links
 
