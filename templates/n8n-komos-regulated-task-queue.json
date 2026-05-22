@@ -1,0 +1,92 @@
+{
+  "name": "Komos regulated browser ops task queue",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "komos-regulated-task",
+        "responseMode": "responseNode"
+      },
+      "id": "webhook-intake",
+      "name": "Case intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.komos.ai/public/v1/tasks/{{$env.KOMOS_TASK_ID}}/runs",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.KOMOS_API_KEY}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"case_id\": $json.body.case_id,\n    \"workflow_type\": $json.body.workflow_type,\n    \"portal\": $json.body.portal,\n    \"subject\": $json.body.subject,\n    \"return_fields\": $json.body.return_fields || [\"status\", \"evidence_url\", \"exception_reason\"]\n  }\n}"
+      },
+      "id": "create-komos-run",
+      "name": "Create Komos run",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"queued\": true,\n  \"komos_run\": $json,\n  \"next_step\": \"Store this run id and poll Komos or consume your configured webhook callback.\"\n}"
+      },
+      "id": "respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        520,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Case intake": {
+      "main": [
+        [
+          {
+            "node": "Create Komos run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Komos run": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "description": "Queue a Komos browser automation run for CRA, insurance eligibility, banking operations, or other regulated portal work. See https://www.komos.ai/solutions/background-screening and https://docs.komos.ai/api-reference/introduction."
+  }
+}
