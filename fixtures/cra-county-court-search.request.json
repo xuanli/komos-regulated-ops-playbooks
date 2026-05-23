@@ -1,0 +1,31 @@
+{
+  "case_id": "CRA-100742",
+  "workflow_type": "county_court_search",
+  "portal": "county_record_portal",
+  "subject": {
+    "external_id": "CAND-88301",
+    "first_name": "Example",
+    "last_name": "Candidate",
+    "date_of_birth": "1990-01-01"
+  },
+  "inputs": {
+    "state": "CA",
+    "county": "Los Angeles",
+    "search_type": "criminal_record",
+    "case_queue": "background_screening_ops"
+  },
+  "return_fields": [
+    "status",
+    "record_found",
+    "record_summary",
+    "evidence_url",
+    "exception_reason",
+    "next_action"
+  ],
+  "audit": {
+    "source_system": "background_screening_case_queue",
+    "requested_by": "cra-ops@example.com",
+    "requested_at": "2026-05-23T12:00:00Z",
+    "policy_reference": "fcra-background-check-procedure"
+  }
+}

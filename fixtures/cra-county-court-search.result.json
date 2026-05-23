@@ -1,0 +1,25 @@
+{
+  "case_id": "CRA-100742",
+  "status": "completed",
+  "outputs": {
+    "record_found": false,
+    "record_summary": "No matching record found for the supplied identifiers.",
+    "evidence_url": "https://files.example.com/evidence/CRA-100742-court-search.pdf",
+    "portal_message": "Search completed"
+  },
+  "evidence": [
+    {
+      "type": "pdf",
+      "url": "https://files.example.com/evidence/CRA-100742-court-search.pdf",
+      "captured_at": "2026-05-23T12:06:00Z"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://files.example.com/evidence/CRA-100742-search-results.png",
+      "captured_at": "2026-05-23T12:05:43Z"
+    }
+  ],
+  "exception_reason": null,
+  "next_action": "close_case",
+  "completed_at": "2026-05-23T12:06:04Z"
+}

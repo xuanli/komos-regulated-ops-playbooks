@@ -1,0 +1,34 @@
+{
+  "case_id": "ELIG-8821",
+  "workflow_type": "insurance_eligibility_check",
+  "portal": "payer_eligibility_portal",
+  "subject": {
+    "external_id": "PAT-8821",
+    "member_id": "M123456789",
+    "first_name": "Example",
+    "last_name": "Member",
+    "date_of_birth": "1985-04-12"
+  },
+  "inputs": {
+    "payer": "Example Health Plan",
+    "service_date": "2026-05-23",
+    "provider_npi_reference": "NPI-REFERENCE-1",
+    "queue": "eligibility_operations"
+  },
+  "return_fields": [
+    "status",
+    "coverage_status",
+    "plan_name",
+    "copay",
+    "deductible_remaining",
+    "prior_authorization_required",
+    "evidence_url",
+    "exception_reason"
+  ],
+  "audit": {
+    "source_system": "eligibility_ops_queue",
+    "requested_by": "eligibility-team@example.com",
+    "requested_at": "2026-05-23T12:00:00Z",
+    "policy_reference": "payer-eligibility-check-sop"
+  }
+}

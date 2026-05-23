@@ -1,0 +1,31 @@
+{
+  "case_id": "BANK-44019",
+  "workflow_type": "statement_reconciliation",
+  "portal": "bank_operations_portal",
+  "subject": {
+    "external_id": "ORG-2208",
+    "account_reference": "ACCT-99821"
+  },
+  "inputs": {
+    "statement_period": "2026-04",
+    "expected_amount": 7421.15,
+    "expected_currency": "USD",
+    "source_transaction_id": "TRX-2026-04-99821",
+    "source_system": "finance_ops_queue"
+  },
+  "return_fields": [
+    "status",
+    "match_status",
+    "posted_amount",
+    "posted_date",
+    "statement_url",
+    "exception_reason",
+    "next_action"
+  ],
+  "audit": {
+    "source_system": "finance_ops_queue",
+    "requested_by": "bank-ops@example.com",
+    "requested_at": "2026-05-23T12:00:00Z",
+    "policy_reference": "finance-reconciliation-control"
+  }
+}

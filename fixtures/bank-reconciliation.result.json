@@ -1,0 +1,26 @@
+{
+  "case_id": "BANK-44019",
+  "status": "completed",
+  "outputs": {
+    "match_status": "matched",
+    "posted_amount": 7421.15,
+    "posted_date": "2026-04-30",
+    "statement_url": "https://files.example.com/evidence/BANK-44019-statement.pdf",
+    "mismatch_fields": []
+  },
+  "evidence": [
+    {
+      "type": "pdf",
+      "url": "https://files.example.com/evidence/BANK-44019-statement.pdf",
+      "captured_at": "2026-05-23T12:08:00Z"
+    },
+    {
+      "type": "run_log",
+      "url": "https://files.example.com/evidence/BANK-44019-run-log.json",
+      "captured_at": "2026-05-23T12:08:04Z"
+    }
+  ],
+  "exception_reason": null,
+  "next_action": "close_case",
+  "completed_at": "2026-05-23T12:08:05Z"
+}

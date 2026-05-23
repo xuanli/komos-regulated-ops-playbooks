@@ -1,0 +1,25 @@
+{
+  "case_id": "FCRA-55120",
+  "status": "needs_review",
+  "outputs": {
+    "notice_status": "packet_prepared",
+    "notice_packet_url": "https://files.example.com/evidence/FCRA-55120-notice-packet.pdf",
+    "delivery_status": "held_for_review",
+    "review_reason": "consumer_report_reference_requires_approval"
+  },
+  "evidence": [
+    {
+      "type": "pdf",
+      "url": "https://files.example.com/evidence/FCRA-55120-notice-packet.pdf",
+      "captured_at": "2026-05-23T12:09:00Z"
+    },
+    {
+      "type": "run_log",
+      "url": "https://files.example.com/evidence/FCRA-55120-run-log.json",
+      "captured_at": "2026-05-23T12:09:14Z"
+    }
+  ],
+  "exception_reason": "policy_review_required",
+  "next_action": "manual_review",
+  "completed_at": "2026-05-23T12:09:15Z"
+}

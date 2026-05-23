@@ -1,0 +1,30 @@
+{
+  "case_id": "FCRA-55120",
+  "workflow_type": "fcra_adverse_action_notice",
+  "portal": "candidate_notice_portal",
+  "subject": {
+    "external_id": "CAND-55120",
+    "first_name": "Example",
+    "last_name": "Applicant"
+  },
+  "inputs": {
+    "notice_stage": "pre_adverse_action",
+    "notice_template": "pre_adverse_standard",
+    "consumer_report_reference": "REPORT-55120",
+    "review_queue": "fcra_review"
+  },
+  "return_fields": [
+    "status",
+    "notice_status",
+    "notice_packet_url",
+    "delivery_status",
+    "exception_reason",
+    "next_action"
+  ],
+  "audit": {
+    "source_system": "fcra_adverse_action_queue",
+    "requested_by": "compliance-ops@example.com",
+    "requested_at": "2026-05-23T12:00:00Z",
+    "policy_reference": "fcra-adverse-action-sop"
+  }
+}

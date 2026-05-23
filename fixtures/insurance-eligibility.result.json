@@ -1,0 +1,27 @@
+{
+  "case_id": "ELIG-8821",
+  "status": "completed",
+  "outputs": {
+    "coverage_status": "active",
+    "plan_name": "Example PPO",
+    "copay": "$25",
+    "deductible_remaining": "$300",
+    "prior_authorization_required": false,
+    "evidence_url": "https://files.example.com/evidence/ELIG-8821-eligibility.pdf"
+  },
+  "evidence": [
+    {
+      "type": "pdf",
+      "url": "https://files.example.com/evidence/ELIG-8821-eligibility.pdf",
+      "captured_at": "2026-05-23T12:07:00Z"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://files.example.com/evidence/ELIG-8821-coverage-summary.png",
+      "captured_at": "2026-05-23T12:06:36Z"
+    }
+  ],
+  "exception_reason": null,
+  "next_action": "close_case",
+  "completed_at": "2026-05-23T12:07:04Z"
+}
