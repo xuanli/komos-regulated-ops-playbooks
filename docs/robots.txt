@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xuanli.github.io/komos-regulated-ops-playbooks/sitemap.xml

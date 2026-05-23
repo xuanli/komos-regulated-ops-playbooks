@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRA Background Screening Browser Automation</title>
+    <meta
+      name="description"
+      content="Komos playbook for CRA browser automation across county court searches, verification portals, evidence capture, and case queue updates."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/cra-background-screening.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">CRA operations</p>
+        <h1>Run background screening portal work with auditable browser automation.</h1>
+        <p class="summary">
+          A Komos task can search court and verification portals, capture screenshots and downloaded records, and
+          write structured outcomes back to a CRA case queue.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Workflow Pattern</h2>
+        <ul>
+          <li>Receive candidate and jurisdiction inputs from the background screening case system.</li>
+          <li>Open the relevant public records, employment verification, education verification, or court portal.</li>
+          <li>Search by the supplied identifiers and preserve portal messages, timestamps, and screenshots.</li>
+          <li>Return status, record summary, evidence URL, exception reason, and next action.</li>
+          <li>Route identity conflicts, payment issues, and ambiguous records to human review.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Assets</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Komos background screening automation</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/cra-background-screening.md">CRA playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/cra-county-court-search.request.json">Request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/cra-county-court-search.result.json">Result fixture</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FCRA Adverse Action Browser Automation</title>
+    <meta
+      name="description"
+      content="Komos playbook for FCRA adverse action notice queues, packet assembly, delivery status checks, evidence capture, and reviewer handoffs."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">FCRA operations</p>
+        <h1>Prepare adverse action packets while preserving review control.</h1>
+        <p class="summary">
+          A Komos task can assemble notice packets, check portal status, capture evidence, and hold policy-sensitive
+          cases for compliance review.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Workflow Pattern</h2>
+        <ul>
+          <li>Receive the notice stage, template reference, and consumer report reference from the case queue.</li>
+          <li>Open the notice or candidate communication portal and prepare the packet.</li>
+          <li>Capture packet URLs, portal messages, delivery state, and run logs.</li>
+          <li>Return deterministic exception categories for reviewer routing.</li>
+          <li>Keep legal judgment and final approvals with the compliance team.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Assets</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">Komos FCRA adverse action automation</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/cra-background-screening.md">CRA and FCRA playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/fcra-adverse-action.request.json">Request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/fcra-adverse-action.result.json">Result fixture</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

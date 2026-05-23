@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insurance Eligibility Browser Automation</title>
+    <meta
+      name="description"
+      content="Komos playbook for insurance eligibility browser automation across payer portals, member lookup, coverage evidence, and exception queues."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Insurance operations</p>
+        <h1>Verify payer eligibility and return structured coverage evidence.</h1>
+        <p class="summary">
+          A Komos task can operate payer portals, search by member and service date, capture coverage details, and
+          route mismatches or MFA blocks to human review.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Workflow Pattern</h2>
+        <ul>
+          <li>Receive member, payer, service date, and provider reference fields from the eligibility queue.</li>
+          <li>Open the payer portal with the correct credential and tenant context.</li>
+          <li>Capture coverage status, plan name, copay, deductible, and prior authorization flags.</li>
+          <li>Return evidence URLs and normalized exception reasons.</li>
+          <li>Escalate conflicting member data, portal outage, and MFA cases.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Assets</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Komos insurance eligibility verification</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/insurance-eligibility-verification.md">Insurance eligibility playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/insurance-eligibility.request.json">Request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/insurance-eligibility.result.json">Result fixture</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

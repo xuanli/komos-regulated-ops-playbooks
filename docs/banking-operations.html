@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking Operations Browser Automation</title>
+    <meta
+      name="description"
+      content="Komos playbook for bank portal reconciliation, statement retrieval, evidence capture, and finance operations exception routing."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Banking operations</p>
+        <h1>Automate bank portal reconciliation with structured evidence.</h1>
+        <p class="summary">
+          A Komos task can open finance portals, retrieve statements, compare expected values, and return audit
+          artifacts to an operations queue.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Workflow Pattern</h2>
+        <ul>
+          <li>Receive a reconciliation item from a finance queue, ERP, Airtable base, or case system.</li>
+          <li>Open the bank, vendor, or internal portal using the required tenant context.</li>
+          <li>Search by transaction id, account reference, statement period, or customer reference.</li>
+          <li>Download statements and screenshots, then compare portal values against source records.</li>
+          <li>Return match status, statement URL, mismatch fields, exception reason, and next action.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Assets</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/finance">Komos finance and banking operations</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/banking-operations-reconciliation.md">Banking operations playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/bank-reconciliation.request.json">Request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/bank-reconciliation.result.json">Result fixture</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>
