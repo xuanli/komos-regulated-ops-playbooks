@@ -13,6 +13,8 @@ Komos helps operations teams automate browser based work that still lives inside
 * [Make scenario notes](integrations/make-regulated-task-queue.md)
 * [Zapier Zap notes](integrations/zapier-regulated-task-queue.md)
 * [Airtable operations queue schema](integrations/airtable-regulated-ops-queue.md)
+* [Regulated task run JSON schema](schemas/regulated-task-run.schema.json)
+* [Schema usage notes](schemas/README.md)
 * [Cloudflare Worker task router](examples/cloudflare-worker-task-router/README.md)
 * [Vercel serverless task router](examples/vercel-task-router/README.md)
 
@@ -46,6 +48,8 @@ flowchart LR
 ## Common Task Contract
 
 The same request shape works across CRA, insurance, and banking queues. Keep sensitive fields in your system of record and send only the inputs needed for the portal task.
+
+For validation in routers and queue integrations, use the shared [regulated task run JSON schema](schemas/regulated-task-run.schema.json).
 
 ```json
 {
