@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FCRA Adverse Action Operations Automation</title>
+    <meta
+      name="description"
+      content="Public Komos FCRA adverse action operations pattern for notice packet preparation, evidence capture, delivery status checks, exception routing, and compliance review handoffs."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action-operations.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">FCRA operations</p>
+        <h1>Automate adverse action operations while preserving compliance review.</h1>
+        <p class="summary">
+          This public operations pattern shows how Komos can prepare notice packets, capture portal evidence, and
+          route policy-sensitive cases back to compliance reviewers.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Where Komos Fits</h2>
+        <ul>
+          <li>Background screening or HR teams receive queue items with notice stage, template reference, consumer report reference, and candidate contact fields.</li>
+          <li>Komos opens the candidate communication, adverse action, or CRA operations portal with the correct credential context.</li>
+          <li>The task prepares packet materials, checks delivery status, captures portal messages, and records evidence URLs.</li>
+          <li>Ambiguous report data, stale candidate details, missing templates, and final approval steps are routed to reviewers.</li>
+          <li>Compliance teams keep legal judgment and final approval outside the automation.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Structured Output Contract</h2>
+        <div class="grid">
+          <article>
+            <h3>Notice Stage</h3>
+            <p>Return pre-adverse, waiting period, adverse, delivered, failed, blocked, or review required.</p>
+          </article>
+          <article>
+            <h3>Evidence Package</h3>
+            <p>Attach packet URLs, screenshots, delivery records, and run logs for audit and reviewer inspection.</p>
+          </article>
+          <article>
+            <h3>Exception Reason</h3>
+            <p>Classify missing report data, template mismatch, portal error, delivery failure, and reviewer handoff.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Related Resources</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">Komos FCRA adverse action automation</a></li>
+            <li><a href="fcra-adverse-action.html">FCRA adverse action playbook</a></li>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Komos background screening automation</a></li>
+            <li><a href="background-screening-case-study.html">Background screening case study summary</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/cra-background-screening.md">CRA and FCRA markdown playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/fcra-adverse-action.request.json">FCRA adverse action request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/fcra-adverse-action.result.json">FCRA adverse action result fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/schemas">Regulated task run schema</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>
