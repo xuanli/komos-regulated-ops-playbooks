@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Komos Regulated Ops Playbooks</title>
+    <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
+    <description>Public Komos playbooks for regulated browser automation.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 May 2026 00:11:52 GMT</lastBuildDate>
+    <item>
+      <title>CRA Background Screening Browser Automation</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/cra-background-screening.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/cra-background-screening.html</guid>
+      <description>County court searches, verification portals, evidence capture, and CRA case queue updates with Komos.</description>
+      <pubDate>Sun, 24 May 2026 00:11:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>FCRA Adverse Action Browser Automation</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action.html</guid>
+      <description>Notice packet preparation, delivery status checks, evidence capture, and compliance review handoffs with Komos.</description>
+      <pubDate>Sun, 24 May 2026 00:11:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>Insurance Eligibility Browser Automation</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html</guid>
+      <description>Payer portal eligibility checks, coverage evidence, and exception queue routing with Komos.</description>
+      <pubDate>Sun, 24 May 2026 00:11:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>Banking Operations Browser Automation</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html</guid>
+      <description>Bank portal reconciliation, statement retrieval, evidence capture, and finance exception routing with Komos.</description>
+      <pubDate>Sun, 24 May 2026 00:11:52 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

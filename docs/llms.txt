@@ -1,0 +1,30 @@
+# Komos Regulated Ops Playbooks
+
+Public examples for regulated browser automation across CRA background screening, FCRA adverse action, insurance eligibility, and banking operations.
+
+## Core Pages
+
+- Overview: https://xuanli.github.io/komos-regulated-ops-playbooks/
+- CRA background screening: https://xuanli.github.io/komos-regulated-ops-playbooks/cra-background-screening.html
+- FCRA adverse action: https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action.html
+- Insurance eligibility: https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html
+- Banking operations: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html
+
+## Komos Product Pages
+
+- Background screening automation: https://www.komos.ai/solutions/background-screening
+- FCRA adverse action automation: https://www.komos.ai/use-cases/fcra-adverse-action-automation
+- Insurance eligibility verification: https://www.komos.ai/use-cases/insurance-eligibility-verification
+- Finance and banking operations: https://www.komos.ai/solutions/finance
+
+## Repository Assets
+
+- Repository: https://github.com/xuanli/komos-regulated-ops-playbooks
+- Fixtures: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/fixtures
+- Schema: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/schemas
+- Playbooks: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/playbooks
+- Templates: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/templates
+
+## Summary
+
+Komos is a browser automation platform for operational work that still happens in regulated portals, legacy systems, downloaded files, and exception queues. These playbooks show queue intake, browser task execution, evidence capture, structured outputs, exception routing, and human review handoffs.
