@@ -11,6 +11,7 @@ Public examples for regulated browser automation across CRA background screening
 - Insurance eligibility: https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html
 - Insurance eligibility operations pattern: https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility-operations.html
 - Banking operations: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html
+- Banking reconciliation operations pattern: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-reconciliation-operations.html
 
 ## Komos Product Pages
 

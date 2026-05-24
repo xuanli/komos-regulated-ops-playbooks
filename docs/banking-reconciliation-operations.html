@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking Reconciliation Operations Automation</title>
+    <meta
+      name="description"
+      content="Public Komos banking reconciliation operations pattern for finance portals, statement retrieval, evidence capture, mismatch review, and audit-ready outputs."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/banking-reconciliation-operations.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Banking operations</p>
+        <h1>Automate finance portal reconciliation with reviewable evidence.</h1>
+        <p class="summary">
+          This public operations pattern shows how Komos can retrieve statements, compare portal values, and return
+          structured reconciliation outcomes for banking and finance operations teams.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Where Komos Fits</h2>
+        <ul>
+          <li>Finance teams receive reconciliation items from an ERP, case queue, spreadsheet, or internal dashboard.</li>
+          <li>Komos opens bank, payment processor, vendor, or internal finance portals using the correct tenant context.</li>
+          <li>The task searches by transaction ID, account reference, statement period, customer reference, or invoice number.</li>
+          <li>Statements, screenshots, and portal result pages are captured as evidence.</li>
+          <li>Matched, mismatched, missing, blocked, and review-required outcomes are returned to the finance queue.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Structured Output Contract</h2>
+        <div class="grid">
+          <article>
+            <h3>Match Status</h3>
+            <p>Return matched, mismatch, missing transaction, duplicate, portal unavailable, or review required.</p>
+          </article>
+          <article>
+            <h3>Evidence Package</h3>
+            <p>Attach statement files, screenshots, confirmation pages, and extracted field values for audit review.</p>
+          </article>
+          <article>
+            <h3>Next Action</h3>
+            <p>Route exceptions to the right owner with normalized reason codes and the fields that need review.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Related Resources</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/finance">Komos finance and banking operations</a></li>
+            <li><a href="banking-operations.html">Banking operations playbook</a></li>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Komos insurance eligibility verification</a></li>
+            <li><a href="insurance-eligibility-operations.html">Insurance eligibility operations pattern</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/banking-operations-reconciliation.md">Banking reconciliation markdown playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/bank-reconciliation.request.json">Bank reconciliation request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/bank-reconciliation.result.json">Bank reconciliation result fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/schemas">Regulated task run schema</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>
