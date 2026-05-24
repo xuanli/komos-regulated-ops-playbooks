@@ -5,7 +5,14 @@
     <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
     <description>Public Komos playbooks for regulated browser automation.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 00:11:52 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 12:11:55 GMT</lastBuildDate>
+    <item>
+      <title>Insurance Eligibility Operations Automation</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility-operations.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility-operations.html</guid>
+      <description>Public Komos insurance eligibility operations pattern for payer portal verification, coverage evidence capture, exception routing, and reviewer handoffs.</description>
+      <pubDate>Sun, 24 May 2026 12:11:55 GMT</pubDate>
+    </item>
     <item>
       <title>Background Screening Operations Case Study</title>
       <link>https://xuanli.github.io/komos-regulated-ops-playbooks/background-screening-case-study.html</link>

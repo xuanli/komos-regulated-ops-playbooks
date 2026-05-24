@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insurance Eligibility Operations Automation</title>
+    <meta
+      name="description"
+      content="Public Komos insurance eligibility operations pattern for payer portal verification, coverage evidence capture, exception routing, and reviewer handoffs."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility-operations.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Insurance eligibility operations</p>
+        <h1>Automate payer portal eligibility checks without losing exception control.</h1>
+        <p class="summary">
+          This public operations pattern shows how Komos can run repeatable payer portal checks, capture coverage
+          evidence, and return structured outcomes to eligibility queues.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Where Komos Fits</h2>
+        <ul>
+          <li>Eligibility teams receive a work queue with member, payer, provider, and service date fields.</li>
+          <li>Komos opens the relevant payer portal or clearinghouse workflow with the correct credential context.</li>
+          <li>The task searches for the member, confirms coverage status, and records plan, deductible, copay, and authorization indicators.</li>
+          <li>Evidence artifacts and normalized outputs are returned to the source queue.</li>
+          <li>Ambiguous member matches, payer downtime, missing authorization, and MFA blocks are routed to reviewers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Structured Output Contract</h2>
+        <div class="grid">
+          <article>
+            <h3>Coverage Status</h3>
+            <p>Return active, inactive, not found, portal unavailable, or review required as a normalized status.</p>
+          </article>
+          <article>
+            <h3>Evidence URLs</h3>
+            <p>Attach screenshots, downloaded confirmations, or portal result captures for audit and downstream review.</p>
+          </article>
+          <article>
+            <h3>Exception Reason</h3>
+            <p>Classify mismatches, missing data, credential problems, payer errors, and human review handoffs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Related Resources</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Komos insurance eligibility verification</a></li>
+            <li><a href="insurance-eligibility.html">Insurance eligibility playbook</a></li>
+            <li><a href="https://www.komos.ai/solutions/finance">Komos finance and banking operations</a></li>
+            <li><a href="banking-operations.html">Banking operations playbook</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/playbooks/insurance-eligibility-verification.md">Insurance eligibility markdown playbook</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/insurance-eligibility.request.json">Insurance eligibility request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/insurance-eligibility.result.json">Insurance eligibility result fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/schemas">Regulated task run schema</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

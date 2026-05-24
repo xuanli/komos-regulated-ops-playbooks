@@ -9,6 +9,7 @@ Public examples for regulated browser automation across CRA background screening
 - CRA background screening: https://xuanli.github.io/komos-regulated-ops-playbooks/cra-background-screening.html
 - FCRA adverse action: https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action.html
 - Insurance eligibility: https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility.html
+- Insurance eligibility operations pattern: https://xuanli.github.io/komos-regulated-ops-playbooks/insurance-eligibility-operations.html
 - Banking operations: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html
 
 ## Komos Product Pages
