@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regulated Operations Evidence Capture Schema</title>
+    <meta
+      name="description"
+      content="Public Komos evidence capture schema for CRA, FCRA, insurance eligibility, and banking operations browser automation."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Evidence capture</p>
+        <h1>Normalize browser automation evidence for regulated operations.</h1>
+        <p class="summary">
+          This public schema pattern shows how Komos task runs can return screenshots, downloaded files, portal
+          confirmations, status fields, and review reasons without moving final compliance judgment into automation.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Schema Goals</h2>
+        <ul>
+          <li>Keep regulated systems as the source of truth while recording task run evidence in a reviewable package.</li>
+          <li>Return normalized status values for background screening, FCRA adverse action, insurance eligibility, and banking operations queues.</li>
+          <li>Separate deterministic browser work from policy decisions, final approvals, and exception review.</li>
+          <li>Preserve links to files, screenshots, portal messages, and run logs for audit reconstruction.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Core Fields</h2>
+        <div class="grid">
+          <article>
+            <h3>Task Status</h3>
+            <p>Use matched, completed, blocked, failed, portal unavailable, or review required as the primary result.</p>
+          </article>
+          <article>
+            <h3>Evidence URLs</h3>
+            <p>Attach screenshots, downloaded reports, confirmation pages, notices, statements, and extracted result files.</p>
+          </article>
+          <article>
+            <h3>Exception Reason</h3>
+            <p>Classify missing data, ambiguous match, stale credential, portal error, delivery failure, and reviewer handoff.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Related Resources</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Komos background screening automation</a></li>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">Komos FCRA adverse action automation</a></li>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Komos insurance eligibility verification</a></li>
+            <li><a href="https://www.komos.ai/solutions/finance">Komos finance and banking operations</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/schemas/regulated-task-run.schema.json">Regulated task run JSON schema</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/fixtures">Example request and result fixtures</a></li>
+            <li><a href="background-screening-case-study.html">Background screening case study summary</a></li>
+            <li><a href="fcra-adverse-action-operations.html">FCRA adverse action operations pattern</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

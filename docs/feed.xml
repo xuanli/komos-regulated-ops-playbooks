@@ -5,7 +5,14 @@
     <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
     <description>Public Komos playbooks for regulated browser automation.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 20:11:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 08:11:59 GMT</lastBuildDate>
+    <item>
+      <title>Regulated Operations Evidence Capture Schema</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html</guid>
+      <description>Public Komos evidence capture schema for CRA, FCRA, insurance eligibility, and banking operations browser automation.</description>
+      <pubDate>Mon, 25 May 2026 08:11:59 GMT</pubDate>
+    </item>
     <item>
       <title>FCRA Adverse Action Operations Automation</title>
       <link>https://xuanli.github.io/komos-regulated-ops-playbooks/fcra-adverse-action-operations.html</link>
