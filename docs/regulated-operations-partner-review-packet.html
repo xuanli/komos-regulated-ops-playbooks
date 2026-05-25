@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regulated Operations Partner Review Packet</title>
+    <meta
+      name="description"
+      content="A public Komos review packet for associations, ecosystem partners, and editors evaluating CRA, FCRA, insurance eligibility, and banking operations browser automation."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Partner review packet</p>
+        <h1>Evaluate regulated browser automation with concrete workflows, evidence, and handoffs.</h1>
+        <p class="summary">
+          This packet helps associations, fintech and compliance reviewers, marketplace maintainers, and ecosystem
+          partners inspect how Komos handles regulated portal work without replacing policy judgment or human review.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Review Checklist</h2>
+        <div class="grid">
+          <article>
+            <h3>Workflow Boundary</h3>
+            <p>Identify which browser steps are deterministic and which decisions stay with the operations team.</p>
+          </article>
+          <article>
+            <h3>Evidence Package</h3>
+            <p>Confirm that screenshots, downloaded files, portal messages, timestamps, and run logs are returned.</p>
+          </article>
+          <article>
+            <h3>Queue Handoff</h3>
+            <p>Verify that task runs return structured status, exception reason, next action, and reviewer notes.</p>
+          </article>
+          <article>
+            <h3>Integration Fit</h3>
+            <p>Check whether the example can start from n8n, Make, Zapier, Airtable, Vercel, Cloudflare, or an API.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Use Case Modules</h2>
+        <div class="links">
+          <ul>
+            <li><a href="background-screening-case-study.html">Background screening operations case study summary</a></li>
+            <li><a href="cra-background-screening.html">CRA county court and verification portal playbook</a></li>
+            <li><a href="fcra-adverse-action-operations.html">FCRA adverse action operations pattern</a></li>
+            <li><a href="insurance-eligibility-operations.html">Insurance eligibility operations pattern</a></li>
+          </ul>
+          <ul>
+            <li><a href="banking-reconciliation-operations.html">Banking reconciliation operations pattern</a></li>
+            <li><a href="regulated-operations-evidence-schema.html">Regulated operations evidence schema</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/fixtures">Public request and result fixtures</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/schemas/regulated-task-run.schema.json">Regulated task run JSON schema</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Partner Fit By Audience</h2>
+        <div class="grid">
+          <article>
+            <h3>CRA And Screening Associations</h3>
+            <p>Best fit when the article or directory cares about county searches, verification portals, FCRA packets, and audit evidence.</p>
+          </article>
+          <article>
+            <h3>Banking And Finance Operators</h3>
+            <p>Best fit when the audience manages reconciliation, statement retrieval, invoice checks, and exception queues.</p>
+          </article>
+          <article>
+            <h3>Insurance Operations Teams</h3>
+            <p>Best fit when the workflow covers payer portal eligibility, member lookup, benefit extraction, and prior authorization flags.</p>
+          </article>
+          <article>
+            <h3>Automation Ecosystems</h3>
+            <p>Best fit when reviewers need a real template, API boundary, queue example, or public fixture instead of a generic tool listing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Integration References</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/templates/n8n-komos-regulated-task-queue.json">n8n regulated task queue template</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/make-regulated-task-queue.md">Make regulated task queue notes</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/zapier-regulated-task-queue.md">Zapier regulated task queue notes</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/airtable-regulated-ops-queue.md">Airtable operations queue schema</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/cloudflare-worker-task-router">Cloudflare Worker task router</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/vercel-task-router">Vercel serverless task router</a></li>
+            <li><a href="https://docs.komos.ai/api-reference/introduction">Komos API documentation</a></li>
+            <li><a href="https://www.komos.ai/browser-automation-tools">Browser automation tools guide</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Komos Product Pages</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Background screening automation</a></li>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">FCRA adverse action automation</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Insurance eligibility verification</a></li>
+            <li><a href="https://www.komos.ai/solutions/finance">Finance and banking operations</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

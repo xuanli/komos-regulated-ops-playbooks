@@ -17,6 +17,7 @@ Komos helps operations teams automate browser based work that still lives inside
 * [Schema usage notes](schemas/README.md)
 * [Regulated ops fixtures](fixtures/README.md)
 * [GitHub Pages overview](https://xuanli.github.io/komos-regulated-ops-playbooks/)
+* [Regulated operations partner review packet](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html)
 * [Cloudflare Worker task router](examples/cloudflare-worker-task-router/README.md)
 * [Vercel serverless task router](examples/vercel-task-router/README.md)
 

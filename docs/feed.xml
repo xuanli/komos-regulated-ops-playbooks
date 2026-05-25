@@ -5,7 +5,14 @@
     <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
     <description>Public Komos playbooks for regulated browser automation.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 08:11:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 20:12:02 GMT</lastBuildDate>
+    <item>
+      <title>Regulated Operations Partner Review Packet</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html</guid>
+      <description>Public Komos review packet for associations, ecosystem partners, and editors evaluating CRA, FCRA, insurance eligibility, and banking operations browser automation.</description>
+      <pubDate>Mon, 25 May 2026 20:12:02 GMT</pubDate>
+    </item>
     <item>
       <title>Regulated Operations Evidence Capture Schema</title>
       <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html</link>

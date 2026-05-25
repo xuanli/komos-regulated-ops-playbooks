@@ -14,6 +14,7 @@ Public examples for regulated browser automation across CRA background screening
 - Banking operations: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-operations.html
 - Banking reconciliation operations pattern: https://xuanli.github.io/komos-regulated-ops-playbooks/banking-reconciliation-operations.html
 - Regulated operations evidence schema: https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html
+- Regulated operations partner review packet: https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html
 
 ## Komos Product Pages
 
