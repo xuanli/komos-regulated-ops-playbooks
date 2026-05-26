@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regulated Ops Vendor Evaluation Checklist</title>
+    <meta
+      name="description"
+      content="A public checklist for evaluating browser automation vendors for CRA background screening, FCRA adverse action, insurance eligibility, and banking operations."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Vendor evaluation</p>
+        <h1>Checklist for regulated operations browser automation vendors.</h1>
+        <p class="summary">
+          Use this checklist when evaluating automation for CRA background screening, FCRA adverse action,
+          insurance eligibility, banking reconciliation, and other regulated portal workflows.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Core Evaluation Questions</h2>
+        <ul>
+          <li>Can the vendor operate the exact browser portals, legacy systems, files, and exception queues used by the team?</li>
+          <li>Can every task run return screenshots, downloaded artifacts, timestamps, portal messages, and structured outputs?</li>
+          <li>Can the automation separate deterministic portal work from policy decisions, approvals, and compliance judgment?</li>
+          <li>Can humans review exceptions before final action when data is missing, ambiguous, stale, or policy-sensitive?</li>
+          <li>Can the vendor integrate with the existing case queue, CRM, spreadsheet, n8n flow, Make scenario, Zapier Zap, or API router?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Use Case Checks</h2>
+        <div class="grid">
+          <article>
+            <h3>CRA Background Screening</h3>
+            <p>Check county court search flows, verification portals, candidate matching, record evidence, and reviewer routing.</p>
+            <a href="cra-background-screening.html">Review CRA playbook</a>
+          </article>
+          <article>
+            <h3>FCRA Adverse Action</h3>
+            <p>Check notice packet assembly, delivery status, dispute handoffs, compliance review, and audit reconstruction.</p>
+            <a href="fcra-adverse-action-operations.html">Review FCRA operations pattern</a>
+          </article>
+          <article>
+            <h3>Insurance Eligibility</h3>
+            <p>Check payer portal login, member lookup, benefit extraction, prior authorization flags, and exception reasons.</p>
+            <a href="insurance-eligibility-operations.html">Review insurance operations pattern</a>
+          </article>
+          <article>
+            <h3>Banking Operations</h3>
+            <p>Check statement retrieval, reconciliation evidence, mismatch categories, finance queue updates, and audit logs.</p>
+            <a href="banking-reconciliation-operations.html">Review banking operations pattern</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Evidence Requirements</h2>
+        <div class="grid">
+          <article>
+            <h3>Source Evidence</h3>
+            <p>Portal screenshots, downloaded records, statements, notices, eligibility responses, and confirmation pages.</p>
+          </article>
+          <article>
+            <h3>Run Evidence</h3>
+            <p>Task id, run id, timestamps, input reference, credential context, status, retry count, and automation logs.</p>
+          </article>
+          <article>
+            <h3>Review Evidence</h3>
+            <p>Exception reason, reviewer handoff, final decision owner, policy note, and next action returned to the queue.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Technical Fit</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/templates/n8n-komos-regulated-task-queue.json">n8n regulated task queue template</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/make-regulated-task-queue.md">Make regulated task queue notes</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/zapier-regulated-task-queue.md">Zapier regulated task queue notes</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/integrations/airtable-regulated-ops-queue.md">Airtable operations queue schema</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/cloudflare-worker-task-router">Cloudflare Worker task router</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/vercel-task-router">Vercel serverless task router</a></li>
+            <li><a href="regulated-operations-evidence-schema.html">Regulated operations evidence schema</a></li>
+            <li><a href="regulated-operations-partner-review-packet.html">Partner review packet</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Komos References</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Background screening automation</a></li>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">FCRA adverse action automation</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Insurance eligibility verification</a></li>
+            <li><a href="https://www.komos.ai/solutions/finance">Finance and banking operations</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

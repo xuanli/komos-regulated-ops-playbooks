@@ -5,7 +5,14 @@
     <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
     <description>Public Komos playbooks for regulated browser automation.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 20:12:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 00:12:03 GMT</lastBuildDate>
+    <item>
+      <title>Regulated Ops Vendor Evaluation Checklist</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html</guid>
+      <description>A public checklist for evaluating browser automation vendors for CRA background screening, FCRA adverse action, insurance eligibility, and banking operations.</description>
+      <pubDate>Tue, 26 May 2026 00:12:03 GMT</pubDate>
+    </item>
     <item>
       <title>Regulated Operations Partner Review Packet</title>
       <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html</link>
