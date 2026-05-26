@@ -5,7 +5,14 @@
     <link>https://xuanli.github.io/komos-regulated-ops-playbooks/</link>
     <description>Public Komos playbooks for regulated browser automation.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 00:12:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 08:12:05 GMT</lastBuildDate>
+    <item>
+      <title>Google Cloud Run Task Router for Regulated Ops</title>
+      <link>https://xuanli.github.io/komos-regulated-ops-playbooks/cloud-run-task-router.html</link>
+      <guid>https://xuanli.github.io/komos-regulated-ops-playbooks/cloud-run-task-router.html</guid>
+      <description>A public Google Cloud Run task router example for queueing Komos browser automation runs for CRA, FCRA, insurance eligibility, and banking operations.</description>
+      <pubDate>Tue, 26 May 2026 08:12:05 GMT</pubDate>
+    </item>
     <item>
       <title>Regulated Ops Vendor Evaluation Checklist</title>
       <link>https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html</link>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Cloud Run Task Router for Regulated Ops</title>
+    <meta
+      name="description"
+      content="A public Google Cloud Run task router example for queueing Komos browser automation runs for CRA, FCRA, insurance eligibility, and banking operations."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/cloud-run-task-router.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Cloud Run router</p>
+        <h1>Queue regulated browser automation tasks from Google Cloud Run.</h1>
+        <p class="summary">
+          A deployable task router for CRA background screening, FCRA adverse action, insurance eligibility,
+          banking reconciliation, and other regulated portal workflows that need evidence capture.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>Use This Pattern When</h2>
+        <ul>
+          <li>Google Cloud Run owns the public or internal intake endpoint for an operations queue.</li>
+          <li>Komos owns the browser task that logs into portals, downloads evidence, and returns structured outputs.</li>
+          <li>The team needs audit fields, exception reasons, and reviewer handoffs returned to the queue.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example Assets</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/google-cloud-run-task-router">Google Cloud Run task router example</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/examples/google-cloud-run-task-router/src/server.js">HTTP router source</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/schemas/regulated-task-run.schema.json">Regulated task run schema</a></li>
+          </ul>
+          <ul>
+            <li><a href="regulated-operations-evidence-schema.html">Regulated operations evidence schema</a></li>
+            <li><a href="regulated-ops-vendor-evaluation-checklist.html">Vendor evaluation checklist</a></li>
+            <li><a href="regulated-operations-partner-review-packet.html">Partner review packet</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Regulated Operations Fit</h2>
+        <div class="grid">
+          <article>
+            <h3>CRA Background Screening</h3>
+            <p>Queue county court searches, verification portal checks, record evidence capture, and review handoffs.</p>
+            <a href="cra-background-screening.html">Review CRA playbook</a>
+          </article>
+          <article>
+            <h3>FCRA Adverse Action</h3>
+            <p>Queue notice packet assembly, delivery status checks, dispute handoffs, and audit reconstruction.</p>
+            <a href="fcra-adverse-action-operations.html">Review FCRA operations pattern</a>
+          </article>
+          <article>
+            <h3>Insurance Eligibility</h3>
+            <p>Queue payer portal checks, member lookup, coverage extraction, and exception categorization.</p>
+            <a href="insurance-eligibility-operations.html">Review insurance operations pattern</a>
+          </article>
+          <article>
+            <h3>Banking Operations</h3>
+            <p>Queue statement retrieval, finance portal checks, reconciliation evidence, and mismatch review.</p>
+            <a href="banking-reconciliation-operations.html">Review banking operations pattern</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Komos References</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://www.komos.ai/solutions/background-screening">Background screening automation</a></li>
+            <li><a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">FCRA adverse action automation</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Insurance eligibility verification</a></li>
+            <li><a href="https://www.komos.ai/solutions/finance">Finance and banking operations</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>

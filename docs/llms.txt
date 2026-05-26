@@ -16,6 +16,7 @@ Public examples for regulated browser automation across CRA background screening
 - Regulated operations evidence schema: https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-evidence-schema.html
 - Regulated operations partner review packet: https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html
 - Regulated ops vendor evaluation checklist: https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html
+- Google Cloud Run task router: https://xuanli.github.io/komos-regulated-ops-playbooks/cloud-run-task-router.html
 
 ## Komos Product Pages
 
@@ -31,6 +32,7 @@ Public examples for regulated browser automation across CRA background screening
 - Schema: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/schemas
 - Playbooks: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/playbooks
 - Templates: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/templates
+- Google Cloud Run task router source: https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples/google-cloud-run-task-router
 
 ## Summary
 

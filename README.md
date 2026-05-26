@@ -19,6 +19,7 @@ Komos helps operations teams automate browser based work that still lives inside
 * [GitHub Pages overview](https://xuanli.github.io/komos-regulated-ops-playbooks/)
 * [Regulated operations partner review packet](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html)
 * [Regulated ops vendor evaluation checklist](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html)
+* [Google Cloud Run task router](examples/google-cloud-run-task-router/README.md)
 * [Cloudflare Worker task router](examples/cloudflare-worker-task-router/README.md)
 * [Vercel serverless task router](examples/vercel-task-router/README.md)
 
@@ -112,7 +113,7 @@ The same structure works across most regulated operations queues.
 * Use the n8n template when a webhook should queue a Komos run from an operations workflow.
 * Use the Make and Zapier notes when the source of truth is a no-code queue or CRM.
 * Use the fixtures when validating request and result handling before connecting real CRA, insurance, or banking queues.
-* Use the Cloudflare Worker or Vercel router when you need a lightweight API boundary around Komos task runs.
+* Use the Google Cloud Run, Cloudflare Worker, or Vercel router when you need a lightweight API boundary around Komos task runs.
 * Use the playbooks when a reviewer needs to inspect the regulated workflow before approving a tool listing, ecosystem PR, or internal automation design.
 
 ## Why This Repo Exists
