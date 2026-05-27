@@ -19,6 +19,7 @@ Komos helps operations teams automate browser based work that still lives inside
 * [GitHub Pages overview](https://xuanli.github.io/komos-regulated-ops-playbooks/)
 * [Regulated operations partner review packet](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-operations-partner-review-packet.html)
 * [Regulated ops vendor evaluation checklist](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-vendor-evaluation-checklist.html)
+* [Regulated ops browser automation benchmark](https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-browser-automation-benchmark.html)
 * [Google Cloud Run task router](examples/google-cloud-run-task-router/README.md)
 * [Cloudflare Worker task router](examples/cloudflare-worker-task-router/README.md)
 * [Vercel serverless task router](examples/vercel-task-router/README.md)

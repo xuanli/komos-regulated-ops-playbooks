@@ -119,6 +119,25 @@ a {
   gap: 12px 28px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--band);
+}
+
 .back {
   display: inline-block;
   margin-bottom: 22px;

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regulated Ops Browser Automation Benchmark</title>
+    <meta
+      name="description"
+      content="A practical benchmark checklist for comparing browser automation approaches in CRA background screening, FCRA adverse action, insurance eligibility, and banking operations."
+    >
+    <link rel="canonical" href="https://xuanli.github.io/komos-regulated-ops-playbooks/regulated-ops-browser-automation-benchmark.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <p class="eyebrow">Benchmark checklist</p>
+        <h1>Browser automation benchmarks for regulated operations.</h1>
+        <p class="summary">
+          A public checklist for evaluating whether an automation approach can handle portal work, evidence capture,
+          exception routing, and reviewer handoffs in regulated workflows.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <a class="back" href="./">Back to overview</a>
+        <h2>What To Benchmark</h2>
+        <p>
+          Regulated operations teams should test more than whether an agent can click through a demo page. The useful
+          benchmark is whether the system can complete real portal work, return auditable evidence, separate policy
+          decisions from automation, and route exceptions to the right queue.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Benchmark Area</th>
+              <th>What To Measure</th>
+              <th>Public Komos Artifact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Portal execution</td>
+              <td>Login handling, multi-step navigation, downloaded files, retries, and clear terminal states.</td>
+              <td><a href="cloud-run-task-router.html">Google Cloud Run task router</a></td>
+            </tr>
+            <tr>
+              <td>Evidence capture</td>
+              <td>Screenshots, source documents, portal response text, timestamps, run ids, and reviewer notes.</td>
+              <td><a href="regulated-operations-evidence-schema.html">Evidence schema</a></td>
+            </tr>
+            <tr>
+              <td>Human review</td>
+              <td>Exception reasons, missing data, ambiguous matches, policy-sensitive outcomes, and queue handoff.</td>
+              <td><a href="regulated-operations-partner-review-packet.html">Partner review packet</a></td>
+            </tr>
+            <tr>
+              <td>Queue integration</td>
+              <td>n8n, Make, Zapier, Airtable, API router, and case-management handoff patterns.</td>
+              <td><a href="regulated-ops-vendor-evaluation-checklist.html">Vendor evaluation checklist</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Use Case Coverage</h2>
+        <div class="grid">
+          <article>
+            <h3>CRA Background Screening</h3>
+            <p>Measure record lookup, identity matching, evidence retention, and adjudication handoff boundaries.</p>
+            <a href="https://www.komos.ai/solutions/background-screening">Komos background screening automation</a>
+          </article>
+          <article>
+            <h3>FCRA Adverse Action</h3>
+            <p>Measure notice packet assembly, delivery-status checks, dispute handoff, and compliance review routing.</p>
+            <a href="https://www.komos.ai/use-cases/fcra-adverse-action-automation">Komos FCRA adverse action automation</a>
+          </article>
+          <article>
+            <h3>Insurance Eligibility</h3>
+            <p>Measure member lookup, payer portal evidence, coverage flags, prior authorization hints, and exceptions.</p>
+            <a href="https://www.komos.ai/use-cases/insurance-eligibility-verification">Komos insurance eligibility verification</a>
+          </article>
+          <article>
+            <h3>Banking Operations</h3>
+            <p>Measure statement retrieval, reconciliation output, mismatch categories, and finance audit trails.</p>
+            <a href="https://www.komos.ai/solutions/finance">Komos finance and banking operations</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Benchmark Inputs</h2>
+        <div class="links">
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/cra-county-court-search.request.json">CRA request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/fcra-adverse-action.request.json">FCRA request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/insurance-eligibility.request.json">Insurance request fixture</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/fixtures/bank-reconciliation.request.json">Bank reconciliation request fixture</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/blob/main/schemas/regulated-task-run.schema.json">Regulated task run JSON schema</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/templates">n8n regulated task queue template</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/integrations">Make, Zapier, and Airtable integration notes</a></li>
+            <li><a href="https://github.com/xuanli/komos-regulated-ops-playbooks/tree/main/examples">Serverless router examples</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Pass Criteria</h2>
+        <ul>
+          <li>The automation returns a structured status for every run: completed, needs review, blocked, or failed.</li>
+          <li>The output includes enough evidence for a reviewer to reconstruct the portal result without rerunning the task.</li>
+          <li>Policy decisions remain outside the automation unless an approved rule has already been encoded by the business.</li>
+          <li>Exceptions include a reason, the affected field, evidence links, and a recommended next action for the queue.</li>
+          <li>The system can be deployed behind the team's preferred queue, API router, or integration platform.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>Maintained as public examples for Komos regulated operations automation.</footer>
+  </body>
+</html>
